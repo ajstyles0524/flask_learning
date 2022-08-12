@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>home</title>
+</head>
+<body>
+    {% if message %}
+        <p><strong>Message:</strong> {{message}}</p>
+    {% endif %}
+<h3>Welcome to the website</h3>
+<a href = "{{ url_for('login_flash') }}">login</a>
+</body>
+</html>
